@@ -1,3 +1,4 @@
+// 模块化编程。
 var Utils = (function() {
     var dataSet, treeData;
 
