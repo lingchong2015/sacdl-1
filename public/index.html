@@ -91,6 +91,62 @@
     <script type="text/javascript" charset="utf-8" src="js/bar.js"></script>
     <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
     <!-- /build -->
+
+    <script type="text/javascript" charset="utf-8">
+    /*
+        //
+        // Rectangle constructor that makes rectangle objects.
+        //
+        function Rectangle(width, height) {
+            console.log("This in Rectangle is: ");
+            console.log(this);
+
+            this.width = width || 0;
+            this.height = height || 0;
+            this.getArea = function() {
+                console.log("This in rectangle's getAdrea is: ");
+                console.log(this);
+                return this.width * this.height;
+            };
+        }
+
+        var rect1 = new Rectangle(5, 10);
+        console.log("Area of rectangle 1: ", rect1.getArea());
+
+        //
+        // A function that makes rectangle objects.
+        //
+        function makeRectangle(width, height) {
+            console.log("This is makeRectangle is: ");
+            console.log(this);
+
+            return {
+                width: width || 0,
+                height: height || 0,
+                getArea: function() {
+                    console.log("This in rectangle's getAdrea is: ");
+                    console.log(this);
+                    return this.width * this.height;
+                }
+            }
+        }
+
+        var rect2 = makeRectangle(5, 10);
+        console.log("Area of rectangle 2: " + rect2.getArea());
+
+        //
+        // getArea function.
+        //
+        function getArea(r) {
+            console.log("This in getArea is: ");
+            console.log(this);
+            return (r.width * r.height);
+        }
+        console.log("Area from getArea(rect1): " + getArea(rect1));
+    */
+    
+
+    </script>
 </body>
 
 </html>
