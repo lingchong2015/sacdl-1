@@ -4,7 +4,7 @@
 <head>
     <title>Shapes with Prototypes and Inheritance</title>
     <meta charset="utf-8">
-    <style type="text/css" rel="stylesheet">
+    <!-- <style type="text/css" rel="stylesheet">
         html,
         body,
         div#container {
@@ -36,13 +36,14 @@
             background-color: goldenrod;
             border-radius: 50%;
         }
-    </style>
+    </style> -->
 </head>
 
 <body>
     <div id="container"></div>
 </body>
 <script type="text/javascript" charset="utf-8">
+    /*
     var shape = {
         x: 0,
         y: 0,
@@ -143,6 +144,28 @@
         addShapeToPage(circle1);
         addShapeToPage(circle2);
         addShapeToPage(square);
+    }
+    */
+
+    /*
+    var myArray = [1, 2, 3];
+    var newArray = myArray.map(function(x) {return x + 1;});
+    console.log(newArray);
+    */
+
+    window.onload = function() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(getLocation);
+        } else {
+            console.log("Sorry, no Geolocation support!");
+        }
+    };
+
+    function getLocation(postion) {
+        var latitude = postion.coords.latitude;
+        var longitude = postion.coords.longitude;
+        var div = document.getElementById("container");
+        div.innerHTML = "You are at lat: " + latitude + ", lon: " + longitude;
     }
 </script>
 
